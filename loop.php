@@ -1,8 +1,9 @@
 <ul class="list-posts row">
 	<?php while(have_posts()) : the_post(); ?>
-		<li id="post-<?php the_ID(); ?>" <?php post_class('post-item four columns'); ?>>
+		<li id="post-<?php the_ID(); ?>" <?php post_class('post-item three columns'); ?>>
 			<article>
 				<header class="post-header">
+					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 						<?php
 						if(has_post_thumbnail())
@@ -11,37 +12,13 @@
 							echo '<img src="' . get_post_meta($post->ID, 'picture', true) . '" />';
 						?>
 					</a>
-					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 					<p class="meta clearfix">
 						<span class="date">
 							<span class="lsf">&#xE15e;</span>
 							<span class="date-content"><?php echo get_the_date('m/d/Y'); ?></span>
 						</span>
-						<?php
-						if(get_the_terms($post->ID, 'publisher')) :
-							?>
-							<span class="publisher">
-								<span class="lsf">clip</span>
-								<span class="publisher-content">
-									<?php
-									echo array_shift(get_the_terms($post->ID, 'publisher'))->name;
-									?>
-								</span>
-							</span>
-							<?php
-						endif;
-						?>
 					</p>
 				</header>
-				<section class="post-content">
-					<?php the_excerpt(); ?>
-				</section>
-				<footer class="post-actions">
-					<div class="buttons">
-						<a class="button" href="<?php the_permalink(); ?>"><?php _e('Read more', 'ekuatorial'); ?></a>
-						<a class="button" href="<?php echo jeo_get_share_url(array('p' => $post->ID)); ?>"><?php _e('Share', 'ekuatorial'); ?></a>
-					</div>
-				</footer>
 			</article>
 		</li>
 	<?php endwhile; ?>
