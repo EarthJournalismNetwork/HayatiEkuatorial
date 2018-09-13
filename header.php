@@ -48,15 +48,6 @@
 		</div>
 		<section id="mastnav" class="clearfix">
 			<div class="container">
-				<div class="eight columns">
-					<nav>
-						<ul>
-							<?php wp_nav_menu(array(
-								'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s<li><a href="#submit" class="submit-story">' . __('Submit a story', 'ekuatorial') . '</a></li></ul>'
-							)); ?>
-						</ul>
-					</nav>
-				</div>
 				<div class="four columns">
 					<?php if(function_exists('qtranxf_getLanguage')) : ?>
 						<nav id="langnav">
@@ -82,13 +73,6 @@
 							</li>
 							<li class="fb">
 								<a href="https://facebook.com/ekuatorial" rel="external" target="_blank" title="Facebook"></a>
-							</li>
-						</ul>
-					</nav>
-					<nav id="feedback">
-						<ul>
-							<li>
-								<a href="<?php echo ekuatorial_home_url('/mail-us/'); ?>" title="<?php _e('Feedback', 'ekuatorial'); ?>"><?php _e('Contact', 'ekuatorial'); ?></a>
 							</li>
 						</ul>
 					</nav>
