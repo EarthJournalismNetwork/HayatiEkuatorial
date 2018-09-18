@@ -43,41 +43,24 @@
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" class="logo" />
 				<h1><a href="<?php echo home_url('/' . $lang); ?>" title="<?php echo bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
 				<p class="slogan"><?php bloginfo('description'); ?></p>
-				<?php get_search_form(); ?>
-			</div>
-		</div>
-		<section id="mastnav" class="clearfix">
-			<div class="container">
-				<div class="four columns">
-					<?php if(function_exists('qtranxf_getLanguage')) : ?>
-						<nav id="langnav">
-							<ul>
-								<?php
-								global $q_config;
-								if(is_404()) $url = get_option('home'); else $url = '';
-								$current = qtranxf_getLanguage();
-								foreach($q_config['enabled_languages'] as $language) {
-									$attrs = '';
-									if($language == $current)
-										$attrs = 'class="active"';
-									echo '<li><a href="' . qtranxf_convertURL($url, $language) . '" ' . $attrs . '>' . $language . '</a></li>';
-								}
-								?>
-							</ul>
-						</nav>
-					<?php endif; ?>
-					<nav id="social">
+				<?php if(function_exists('qtranxf_getLanguage')) : ?>
+					<nav id="langnav">
 						<ul>
-							<li class="twitter">
-								<a href="https://twitter.com/EkuatorialMap" rel="external" target="_blank" title="Twitter"></a>
-							</li>
-							<li class="fb">
-								<a href="https://facebook.com/ekuatorial" rel="external" target="_blank" title="Facebook"></a>
-							</li>
+							<?php
+							global $q_config;
+							if(is_404()) $url = get_option('home'); else $url = '';
+							$current = qtranxf_getLanguage();
+							foreach($q_config['enabled_languages'] as $language) {
+								$attrs = '';
+								if($language == $current)
+									$attrs = 'class="active"';
+								echo '<li><a href="' . qtranxf_convertURL($url, $language) . '" ' . $attrs . '>' . $language . '</a></li>';
+							}
+							?>
 						</ul>
 					</nav>
-				</div>
+				<?php endif; ?>
 			</div>
-		</section>
+		</div>
 	</header>
 	<section id="main-content">
