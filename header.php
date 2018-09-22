@@ -40,7 +40,7 @@
 				if(function_exists('qtranxf_getLanguage'))
 					$lang = qtranxf_getLanguage();
 				?>
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" class="logo" />
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Logo-BioD.png.png" class="logo" />
 				<h1><a href="<?php echo home_url('/' . $lang); ?>" title="<?php echo bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
 				<p class="slogan"><?php bloginfo('description'); ?></p>
 				<?php if(function_exists('qtranxf_getLanguage')) : ?>
@@ -60,6 +60,7 @@
 						</ul>
 					</nav>
 				<?php endif; ?>
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-two-SIEJ-EJN.png" class="siej-ejn-header"/>
 			</div>
 		</div>
 	</header>
