@@ -2834,6 +2834,7 @@ nav#langnav ul li {
 }
 nav#langnav ul li:first-child:after {
   content: ' | ';
+  color: #fff;
 }
 nav#langnav {
   margin-top: 10px;
