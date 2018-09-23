@@ -2835,3 +2835,16 @@ nav#langnav ul li {
 nav#langnav ul li:first-child:after {
   content: ' | ';
 }
+nav#langnav {
+  margin-top: 10px;
+  margin-left: 60%;
+}
+
+nav#langnav ul li a {
+    color: #fff;
+}
+.headline {
+  font-size: 80px;
+  text-transform: uppercase;
+  color: #fff;
+}
