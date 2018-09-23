@@ -35,30 +35,28 @@
 	<header id="masthead">
 		<div class="container">
 			<div class="twelve columns">
-				<?php
-				$lang = '';
-				if(function_exists('qtranxf_getLanguage'))
-					$lang = qtranxf_getLanguage();
-				?>
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Logo-BioD.png" class="logo" />
-				<?php if(function_exists('qtranxf_getLanguage')) : ?>
-					<nav id="langnav">
-						<ul>
-							<?php
-							global $q_config;
-							if(is_404()) $url = get_option('home'); else $url = '';
-							$current = qtranxf_getLanguage();
-							foreach($q_config['enabled_languages'] as $language) {
-								$attrs = '';
-								if($language == $current)
-									$attrs = 'class="active"';
-								echo '<li><a href="' . qtranxf_convertURL($url, $language) . '" ' . $attrs . '>' . $q_config['language_name'][$language] . '</a></li>';
-							}
-							?>
-						</ul>
-					</nav>
-				<?php endif; ?>
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-two-SIEJ-EJN.png" class="siej-ejn-header"/>
+				<h1 class="headline">Biodiversity</h1>
+				<div class="header-right">
+					<?php if(function_exists('qtranxf_getLanguage')) : ?>
+						<nav id="langnav">
+							<ul>
+								<?php
+								$lang = qtranxf_getLanguage();
+								global $q_config;
+								if(is_404()) $url = get_option('home'); else $url = '';
+								$current = qtranxf_getLanguage();
+								foreach($q_config['enabled_languages'] as $language) {
+									$attrs = '';
+									if($language == $current)
+										$attrs = 'class="active"';
+									echo '<li><a href="' . qtranxf_convertURL($url, $language) . '" ' . $attrs . '>' . $q_config['language_name'][$language] . '</a></li>';
+								}
+								?>
+							</ul>
+						</nav>
+					<?php endif; ?>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-two-SIEJ-EJN.png" class="siej-ejn-header"/>
+				</div>
 			</div>
 		</div>
 	</header>
