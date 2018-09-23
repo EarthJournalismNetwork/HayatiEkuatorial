@@ -2824,3 +2824,14 @@ footer#colophon ul li.label.supported {
   display: block;
   margin: 0 auto 20px;
 }
+
+.header-right {
+  float: right;
+}
+
+nav#langnav ul li {
+    display: inline;
+}
+nav#langnav ul li:first-child:after {
+  content: ' | ';
+}
