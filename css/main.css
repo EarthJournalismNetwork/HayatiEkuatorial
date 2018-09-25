@@ -2848,4 +2848,7 @@ nav#langnav ul li a {
   font-size: 80px;
   text-transform: uppercase;
   color: #fff;
+  padding: 20px 20px;
+  border: white solid;
+  margin: 40px 0px;
 }
