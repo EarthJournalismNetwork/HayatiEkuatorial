@@ -2853,3 +2853,8 @@ nav#langnav ul li a {
   border: white solid;
   margin: 40px 0px;
 }
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
