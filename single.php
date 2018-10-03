@@ -41,7 +41,7 @@
 			<div class="container row">
 				<div class="thumbnail share">
 					<p class="buttons">
-						<a class="button" href="<?php echo get_post_meta($post->ID, 'url', true); ?>" target="_blank"><?php _e('Go to homepage', 'ekuatorial'); ?></a>
+						<a class="button" href="<?php echo home_url() ?>" target="_blank"><?php _e('Go to homepage', 'ekuatorial'); ?></a>
 					</p>
 				</div>
 			</div>
