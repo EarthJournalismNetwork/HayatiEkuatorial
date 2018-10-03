@@ -2323,7 +2323,7 @@ aside#main-widgets ul.widgets>li #ekuatorial-calendar table td#next {
   padding: 2px 10px
 }
 
-footer#colophon {
+#colophon {
   margin-top: 20px;
   padding: 50px 0 0;
   height: 200;
@@ -2331,7 +2331,7 @@ footer#colophon {
   color: #96979c
 }
 
-footer#colophon ul {
+#colophon ul {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2341,23 +2341,23 @@ footer#colophon ul {
   padding: 15px;
 }
 
-footer#colophon ul li a.icon {
+#colophon ul li a.icon {
   height: 50px;
   margin-left: 0;
   margin-right: 15px
 }
 
-footer#colophon ul li a.icon.oeco {
+#colophon ul li a.icon.oeco {
   background-position: -390px 5px;
   width: 110px
 }
 
-footer#colophon ul li a.icon.packard {
+#colophon ul li a.icon.packard {
   background: url(../img/packard-logo.jpg);
   width: 126px
 }
 
-footer#colophon ul li a.icon.siej {
+#colophon ul li a.icon.siej {
   background: url(../img/SIEJ-250px.png);
   width: 150px;
   height: 90px;
@@ -2365,7 +2365,7 @@ footer#colophon ul li a.icon.siej {
   background-size: 150px 90px;
 }
 
-footer#colophon ul li a.icon.sida {
+#colophon ul li a.icon.sida {
   background: url(../img/SIDA-Logo.png);
   width: 311px;
   height: 90px;
@@ -2373,7 +2373,7 @@ footer#colophon ul li a.icon.sida {
   background-size: 311px 90px;
 }
 
-footer#colophon ul li a.icon.internews {
+#colophon ul li a.icon.internews {
   background: url(../img/Internews-250px.png);
   width: 150px;
   height: 50px;
@@ -2382,7 +2382,7 @@ footer#colophon ul li a.icon.internews {
   margin-top: 20px;
 }
 
-footer#colophon ul li a.icon.ejn {
+#colophon ul li a.icon.ejn {
   background: url(../img/EJN-250px.png);
   width: 150px;
   height: 90px;
@@ -2390,18 +2390,18 @@ footer#colophon ul li a.icon.ejn {
   background-size: 150px 90px;
 }
 
-footer#colophon ul li a.icon.ecolab {
+#colophon ul li a.icon.ecolab {
   background: url(../img/ecolab.png) center no-repeat;
   width: 110px
 }
 
-footer#colophon ul li.label {
+#colophon ul li.label {
   position: absolute;
   top: -30px;
   left: 0
 }
 
-footer#colophon ul li.label.supported {
+#colophon ul li.label.supported {
   left: auto;
   right: 20px
 }

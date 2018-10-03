@@ -55,7 +55,12 @@
 							</ul>
 						</nav>
 					<?php endif; ?>
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-two-SIEJ-EJN.png" class="siej-ejn-header"/>
+					<div id="colophon">
+						<ul class="nav clearfix">
+							<li><a class="icon siej" href="http://www.siej.or.id" target="_blank">Society of Indonesian Environmental Journalists</a></li>
+							<li><a class="icon ejn" href="https://earthjournalism.net" target="_blank">Earth Journalism Network</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
