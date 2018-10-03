@@ -35,7 +35,7 @@
 	<header id="masthead">
 		<div class="container">
 			<div class="twelve columns">
-				<h1 class="headline">Biodiversity</h1>
+				<a href="<?php echo home_url() ?>"><h1 class="headline">Biodiversity</h1></a>
 				<div class="header-right">
 					<?php if(function_exists('qtranxf_getLanguage')) : ?>
 						<nav id="langnav">
