@@ -218,7 +218,7 @@ header#masthead .logo {
 
 header#masthead h1 {
   font-weight: 900;
-  margin: 30px 0;
+  margin: 70px 0;
   float: left
 }
 
@@ -2336,7 +2336,7 @@ aside#main-widgets ul.widgets>li #ekuatorial-calendar table td#next {
 }
 
 .nav.clearfix li {
-  padding: 15px;
+  padding: 0px 15px;
 }
 
 #colophon ul li a.icon {
@@ -2357,10 +2357,10 @@ aside#main-widgets ul.widgets>li #ekuatorial-calendar table td#next {
 
 #colophon ul li a.icon.siej {
   background: url(../img/SIEJ-250px.png);
-  width: 150px;
-  height: 90px;
+  width: 250px;
+  height: 150px;
   background-repeat: no-repeat;
-  background-size: 150px 90px;
+  background-size: 250px 150px;
 }
 
 #colophon ul li a.icon.sida {
