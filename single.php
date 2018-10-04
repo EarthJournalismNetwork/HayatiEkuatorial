@@ -44,6 +44,17 @@
 						<a class="button" href="<?php echo home_url() ?>" target="_blank"><?php _e('Go to homepage', 'ekuatorial'); ?></a>
 					</p>
 				</div>
+				<div class="thumbnail social">
+					<div class="fb-share-button" 
+					    data-href="<?php the_permalink(); ?>" 
+					    data-layout="button_count" style="padding-bottom: 5px;">
+					  </div>
+					<div class="twitter-button">
+						<a href="https://twitter.com/share" class="twitter-share-button" data-via="ekuatorial" <?php if(function_exists('qtranxf_getLanguage')) : ?>data-lang="<?php echo qtranxf_getLanguage(); ?>"<?php endif; ?>>Tweet</a>
+					</div>
+					<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+					<script type="IN/Share" data-url="<?php the_permalink(); ?>"></script>
+				</div>
 			</div>
 		</section>
 	</article>
