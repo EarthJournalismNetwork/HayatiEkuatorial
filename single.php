@@ -41,7 +41,9 @@
 			<div class="container row">
 				<div class="thumbnail share">
 					<p class="buttons">
+						<?php previous_post_link('<strong class="button">%link</strong>', 'Previous Article'); ?> 
 						<a class="button" href="<?php echo home_url() ?>" target="_blank"><?php _e('Go to homepage', 'ekuatorial'); ?></a>
+						<?php next_post_link('<strong class="button">%link</strong>', 'Next Article'); ?> 
 					</p>
 				</div>
 				<div class="thumbnail social">
