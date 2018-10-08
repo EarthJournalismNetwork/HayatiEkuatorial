@@ -2798,6 +2798,7 @@ aside#main-widgets ul.widgets>li #ekuatorial-calendar table td#next {
 }
 .thumbnail.share, .thumbnail.social {
   display: flex;
+  margin-bottom: 20px;
 }
 .thumbnail.share p a, .thumbnail.share p strong {
     padding: 10px;
