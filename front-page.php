@@ -14,6 +14,7 @@
 			'orderby' => 'date',
 			'order'   => 'DESC',
 			'posts_per_page' => 16,
+			'paged' => $wp_query->query['paged'],
 		) );
 		?>
 	</div>
