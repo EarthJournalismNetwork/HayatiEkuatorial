@@ -1,7 +1,9 @@
-Ekuatorial
+Hayati.Ekuatorial
 ==========
 
 WordPress JEO child theme
 -------------------------
 
-Install this theme using [JEO parent theme](http://github.com/cardume/jeo)
+This theme is based on [Ekuatorial](https://github.com/EarthJournalismNetwork/ekuatorial) and was created to power a website at https://hayati.ekuatorial.com/, which is no longer available.
+
+To install this theme use [JEO parent theme](https://github.com/EarthJournalismNetwork/jeo)
